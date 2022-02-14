@@ -14,5 +14,5 @@ for time in timeStamps:
     time2 = time1.strftime("%H:%M:%S,%f")[:-3]
     str = re.sub(time, time2, str)
     
-with open(FILE[:-4]+'_delay.str', 'w', encoding="utf8") as f:
+with open(FILE[:-4]+'_delay.srt', 'w', encoding="utf8") as f:
     f.write(str)
